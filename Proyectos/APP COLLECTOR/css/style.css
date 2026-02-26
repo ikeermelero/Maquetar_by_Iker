@@ -14,6 +14,8 @@
     --dark: #0f172a;
     --light: #f8fafc;
     --gray: #94a3b8;
+    --secundary-gray: 148, 163, 184;
+    --opacity: 0.8;
 }
 
 body {
@@ -27,10 +29,42 @@ h1,
 h2,
 h3 {
     font-family: "Limelight", sans-serif;
+    font-size: 2rem;
 }
 
-.shadow{
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.shadow {
     box-shadow: 0px 0px 20px 0px #000;
+}
+
+.liquid-glass-style {
+    /* Efecto Glassmorphism Core */
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Bordes e Iluminación Interna (Efecto Líquido) */
+    background: color-mix(in oklab, var(--glass-bg) 90%, white 10%);
+    border-color: white;
+    box-shadow:
+        0 25px 30px -5px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px 0 rgba(255, 255, 255, 0.3);
+}
+
+.liquid-glass-style-secundary {
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
+    /*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 
@@ -87,7 +121,7 @@ h3 {
 
 .header {
     width: 80%;
-    z-index:99;
+    z-index: 99;
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -119,7 +153,6 @@ h3 {
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--light);
-
 }
 
 .nav-primary {
@@ -127,15 +160,17 @@ h3 {
     top: 100%;
     left: 0;
     width: 100%;
-
     background-color: #111827;
     display: none;
     flex-direction: column;
     padding: 20px;
 }
 
-.nav-primary.active {
+.nav-primary .active {
     display: flex;
+    margin-top: 10px;
+    border-radius: 15px;
+    animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .nav-primary ul {
@@ -161,12 +196,13 @@ h3 {
 /* ================= HERO ================= */
 
 .hero {
-    height: 100vh;
+    margin: 0 auto;
+    width: 90vw;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px;
     background-image: url('../assets/image.webp');
     background-size: cover;
     border-bottom-left-radius: 25px;
@@ -188,16 +224,63 @@ h3 {
     color: #cbd5e1;
 }
 
+/* ================= USER NUMBERS ================= */
+
+.user-numbers {
+    margin: 5% auto;
+    /*background-color: rgba(var(--secundary-gray), 0.4);*/
+    border-radius: 15px;
+}
+
+.user-numbers-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4% 0;
+}
+
+.user-number-card {
+    text-align: center;
+}
+
+/* ================= GENERAL INFORMATION ================= */
+
+.general-information-header {
+    text-align: center;
+}
+
+.general-information-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.general-information-img-1, .general-information-img-3 {
+    width: 250px;
+    height: 250px;
+    padding: 1%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.general-information-img-2{
+    width: 250px;
+    height: 450px;
+    padding: 1%;
+    margin: 1%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
 /* ================= NEW ARRIVALS ================= */
 
 .new-arrivals {
     padding: 10% 2%;
 }
 
-.news-content {
-    max-width: 80%;
-    margin: 0 auto;
-}
 
 .news-header {
     display: flex;
@@ -208,7 +291,7 @@ h3 {
 
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 25px;
 }
 
@@ -216,6 +299,11 @@ h3 {
     background-color: #1f2937;
     border-radius: 15px;
     overflow: hidden;
+    transition: transform .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .news-cards img {
@@ -263,37 +351,48 @@ h3 {
     border-radius: 25px;
 }
 
-.question-text{
+.question-text {
     background-color: #ffffff;
-    opacity: 0.7;
+    opacity: 0.8;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #1f2937;
     color: var(--dark);
     padding: 40px 20px 20px 20px;
     border-radius: 15px;
     z-index: 1;
 }
 
-.question-text img{
+.question-text div img {
     width: 30%;
+}
+
+.question-text div p {
+    font-weight: bold;
+}
+
+.question-stars {
     padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.user-profile{
+.user-profile {
     position: relative;
-    z-index:2;
+    z-index: 2;
 }
 
-.user-profile img{
+.user-profile img {
     width: 100px;
-    height: 100px;;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 15px;
     display: inline-block;
     translate: 0 30px;
-    
 }
-
-
 
 
 /* ================= FOOTER ================= */
@@ -310,6 +409,10 @@ h3 {
 
 @media (max-width: 1200px) {
 
+    .logo a{
+        font-size: 1.2rem;
+    }
+    
     .nav ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -317,6 +420,10 @@ h3 {
 
     .hero h1 {
         font-size: 2.2rem;
+    }
+
+    .question-container, .general-information-footer, .user-numbers-container{
+        flex-direction: column;
     }
 }
 
@@ -345,37 +452,78 @@ h3 {
     .header-buttons {
         flex-direction: row;
     }
+
+
 }
 
 /* ================= ANIMATIONS ================= */
 
+
 @keyframes circle-swoop {
-  from {
-    clip-path: var(--circle-top-right-out);
-  }
-  to {
-    clip-path: var(--circle-bottom-right-in);
-  }
+    from {
+        clip-path: var(--circle-top-center-out);
+    }
+
+    to {
+        clip-path: var(--circle-top-center-in);
+    }
 }
 
 .--in-custom {
-  --transition__duration: 1s;
-  --transition__easing: ease-in-out;
-  animation-name: circle-swoop;
+    --transition__duration: 1s;
+    --transition__easing: ease-in-out;
+    animation-name: circle-swoop;
 }
 
-@keyframes circle-in-hesitate {
+    /*Animación de salida*/
+@keyframes scale-out-tr {
   0% {
-    clip-path: circle(0%);
-  }
-  40% {
-    clip-path: circle(40%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
   }
   100% {
-    clip-path: circle(125%);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
   }
+}
+
+    /*Animación de entrada*/
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+
+
+@keyframes circle-in-hesitate {
+    0% {
+        clip-path: circle(0% at 50% 0%);
+    }
+
+    40% {
+        clip-path: circle(40% at 50% 0%);
+    }
+
+    100% {
+        clip-path: circle(125% at 50% 0%);
+    }
 }
 
 [transition-style="in:circle:hesitate"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
 }

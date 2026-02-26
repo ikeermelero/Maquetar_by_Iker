@@ -26,7 +26,7 @@ SIGUEME y aprenderás más como esto.
 
   <body>
     <!-- ================= HEADER ================= -->
-    <header class="header shadow">
+    <header class="header liquid-glass-style">
       <div class="logo">
         <a href="#">App Collector</a>
       </div>
@@ -50,7 +50,7 @@ SIGUEME y aprenderás más como esto.
     </header>
     <main>
       <!-- ================= HERO ================= -->
-      <section transition-style="in:circle:hesitate" class="hero shadow">
+      <section transition-style="in:circle:hesitate" class="hero liquid-glass-style">
         <div class="hero-content">
           <h1>Descubre tu colección</h1>
 
@@ -65,9 +65,51 @@ SIGUEME y aprenderás más como esto.
           <button class="btn btn-secondary">Buscar artículos</button>
         </div>
       </section>
+
+      <!-- ================= USER NUMBERS ================= -->
+       <section class="user-numbers liquid-glass-style container">
+        <div class="user-numbers-container">
+          <div class="user-number-card ">
+            <h2>10.000+</h2>
+            <p>Usuarios registrados</p>
+          </div>
+          <div class="user-number-card ">
+            <h2>50.000+</h2>
+            <p>Artículos en la plataforma</p>
+          </div>
+          <div class="user-number-card ">
+            <h2>1.000+</h2>
+            <p>Colecciones compartidas</p>
+          </div>
+          <div class="user-number-card ">
+            <h2>1.000+</h2>
+            <p>Colecciones compartidas</p>
+          </div>
+        </div>
+       </section>
+
+      <!-- ================= GENERAL INFORMATION ================= -->
+       <section class="general-information container">
+        <div class="general-information-header">
+          <h2>Vende tu colección a gente apasionada</h2>
+          <p>
+            Si eres un coleccionista apasionado, App Collector es el lugar
+            perfecto para compartir tu colección con otros entusiastas. Nuestra
+            plataforma te permite crear un perfil personalizado donde puedes
+            mostrar tus artículos, compartir historias detrás de cada pieza y
+            conectarte con otros coleccionistas que comparten tus intereses.
+          </p>
+        </div>
+        <div class="general-information-footer">
+          <img class="general-information-img-1 liquid-glass-style" src="assets/general-information-users.webp" alt="">
+          <img class="general-information-img-2 liquid-glass-style" src="assets/general-information-users-2.webp" alt="">
+          <img class="general-information-img-3 liquid-glass-style" src="assets/general-information-users-3.webp" alt="">
+        </div>
+        </section>
+
       <!-- ================= NEW ARRIVALS ================= -->
-      <section class="new-arrivals">
-        <div class="news-content">
+      <section class="new-arrivals ">
+        <div class="container">
           <div class="news-header">
             <div>
               <h2>Nuevos artículos</h2>
@@ -76,7 +118,7 @@ SIGUEME y aprenderás más como esto.
             <button class="btn btn-primary">Ver todos</button>
           </div>
           <div class="news-grid">
-            <div class="news-cards shadow">
+            <div class="news-cards liquid-glass-style-secundary">
               <img src="assets/bmw-e30.jpg" alt="" />
               <ul>
                 <li>BMW E30</li>
@@ -84,7 +126,7 @@ SIGUEME y aprenderás más como esto.
                 <li>20.000€</li>
               </ul>
             </div>
-            <div class="news-cards shadow">
+            <div class="news-cards liquid-glass-style-secundary">
               <img src="assets/kwas-figure.jpg" alt="" />
               <ul>
                 <li>Kwas</li>
@@ -92,7 +134,7 @@ SIGUEME y aprenderás más como esto.
                 <li>200€</li>
               </ul>
             </div>
-            <div class="news-cards shadow">
+            <div class="news-cards liquid-glass-style-secundary">
               <img src="assets/chapas.jpg" alt="" />
               <ul>
                 <li>Chapas</li>
@@ -100,7 +142,7 @@ SIGUEME y aprenderás más como esto.
                 <li>50€</li>
               </ul>
             </div>
-            <div class="news-cards shadow">
+            <div class="news-cards liquid-glass-style-secundary">
               <img src="assets/basija-antigua.jpg" alt="" />
               <ul>
                 <li>Basija Japonesa</li>
@@ -108,7 +150,7 @@ SIGUEME y aprenderás más como esto.
                 <li>3.000€</li>
               </ul>
             </div>
-            <div class="news-cards shadow">
+            <div class="news-cards liquid-glass-style-secundary">
               <img src="assets/juegue-la-robusteza-22558.webp" alt="" />
               <ul>
                 <li>Robot de Juguete</li>
@@ -119,10 +161,28 @@ SIGUEME y aprenderás más como esto.
           </div>
         </div>
       </section>
+
+      <!-- ================= ABOUT US ================= -->
+       <section class="about-us">
+        <!-- ================= INFORMATION ================= -->
+        <div class="information-about">
+
+        </div>
+
+        <!-- ================= EVENTS ================= -->
+        <div class="events-about">
+
+        </div>
+       </section>
+
       <!-- ================= USER QUESTION ================= -->
       <section class="user-question">
         <div class="info-question">
           <h2>Foro de preguntas</h2>
+          <p>
+            Consulta con otros coleccionistas sobre artículos, técnicas o
+            recomendaciones.
+          </p>
           <div class="question-container">
             <div class="question-content">
               <div class="user-profile">
@@ -137,7 +197,13 @@ SIGUEME y aprenderás más como esto.
                   reprehenderit sit libero similique eum molestias maxime odio
                   dolorem voluptatum commodi accusamus?
                 </blockquote>
-                <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                <div class="question-stars">
+                  <div>
+                    <p>350 respuestas</p>
+                    <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                  </div>
+                  <button class="btn btn-outline">Ver respuestas</button>
+                </div>
               </div>
             </div>
             <div class="question-content">
@@ -153,7 +219,13 @@ SIGUEME y aprenderás más como esto.
                   reprehenderit sit libero similique eum molestias maxime odio
                   dolorem voluptatum commodi accusamus?
                 </blockquote>
-                <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                <div class="question-stars">
+                  <div>
+                    <p>350 respuestas</p>
+                    <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                  </div>
+                  <button class="btn btn-outline">Ver respuestas</button>
+                </div>
               </div>
             </div>
             <div class="question-content">
@@ -169,7 +241,13 @@ SIGUEME y aprenderás más como esto.
                   reprehenderit sit libero similique eum molestias maxime odio
                   dolorem voluptatum commodi accusamus?
                 </blockquote>
-                <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                <div class="question-stars">
+                  <div>
+                    <p>350 respuestas</p>
+                    <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
+                  </div>
+                  <button class="btn btn-outline">Ver respuestas</button>
+                </div>
               </div>
             </div>
           </div>
@@ -190,6 +268,5 @@ SIGUEME y aprenderás más como esto.
         nav.classList.toggle("active");
       });
     </script>
-
   </body>
 </html>
