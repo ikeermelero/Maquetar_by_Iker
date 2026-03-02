@@ -12,7 +12,10 @@ Te ha gustado tanto que has llegado hasta aquí ¿no?
 Ya te veia venir, por eso te recuerdo que tengo REDES SOCIALES
 donde subo todo tipo de conociento sobre programación 
 
-SIGUEME y aprenderás más como esto.                                
+SIGUEME y aprenderás más como esto.      
+
+AVISO: Este proyecto no está creado con IA, puede tener sus fallos.
+       Los separadores se usan para marcar las secciones y ordenar el código con claridad.
 
 -->
 <!doctype html>
@@ -43,14 +46,17 @@ SIGUEME y aprenderás más como esto.
         </ul>
 
         <div class="header-buttons">
-          <button class="btn btn-outline">Iniciar sesión</button>
-          <button class="btn btn-primary">Regístrate</button>
+          <a href="login.html"><button class="btn btn-outline">Iniciar sesión</button></a>
+          <a href="login.html"><button class="btn btn-primary">Regístrate</button></a>
         </div>
       </nav>
     </header>
     <main>
       <!-- ================= HERO ================= -->
-      <section transition-style="in:circle:hesitate" class="hero liquid-glass-style">
+      <section
+        transition-style="in:circle:hesitate"
+        class="hero liquid-glass-style"
+      >
         <div class="hero-content">
           <h1>Descubre tu colección</h1>
 
@@ -67,29 +73,29 @@ SIGUEME y aprenderás más como esto.
       </section>
 
       <!-- ================= USER NUMBERS ================= -->
-       <section class="user-numbers liquid-glass-style container">
+      <section class="user-numbers liquid-glass-style container">
         <div class="user-numbers-container">
-          <div class="user-number-card ">
+          <div class="user-number-card">
             <h2>10.000+</h2>
             <p>Usuarios registrados</p>
           </div>
-          <div class="user-number-card ">
+          <div class="user-number-card">
             <h2>50.000+</h2>
             <p>Artículos en la plataforma</p>
           </div>
-          <div class="user-number-card ">
+          <div class="user-number-card">
             <h2>1.000+</h2>
             <p>Colecciones compartidas</p>
           </div>
-          <div class="user-number-card ">
+          <div class="user-number-card">
             <h2>1.000+</h2>
             <p>Colecciones compartidas</p>
           </div>
         </div>
-       </section>
+      </section>
 
       <!-- ================= GENERAL INFORMATION ================= -->
-       <section class="general-information container">
+      <section class="general-information container">
         <div class="general-information-header">
           <h2>Vende tu colección a gente apasionada</h2>
           <p>
@@ -101,80 +107,120 @@ SIGUEME y aprenderás más como esto.
           </p>
         </div>
         <div class="general-information-footer">
-          <img class="general-information-img-1 liquid-glass-style" src="assets/general-information-users.webp" alt="">
-          <img class="general-information-img-2 liquid-glass-style" src="assets/general-information-users-2.webp" alt="">
-          <img class="general-information-img-3 liquid-glass-style" src="assets/general-information-users-3.webp" alt="">
+          <img
+            class="general-information-img-1 liquid-glass-style"
+            src="assets/general-information-users.webp"
+            alt=""
+          />
+          <img
+            class="general-information-img-2 liquid-glass-style"
+            src="assets/general-information-users-2.webp"
+            alt=""
+          />
+          <img
+            class="general-information-img-3 liquid-glass-style"
+            src="assets/general-information-users-3.webp"
+            alt=""
+          />
         </div>
-        </section>
+      </section>
 
-      <!-- ================= NEW ARRIVALS ================= -->
-      <section class="new-arrivals ">
+      <!-- ================= CATEGORIES ================= -->
+      <section class="categories">
         <div class="container">
-          <div class="news-header">
-            <div>
-              <h2>Nuevos artículos</h2>
-              <p>Descubre las últimas adiciones a nuestra colección</p>
-            </div>
-            <button class="btn btn-primary">Ver todos</button>
+          <div class="categories-header">
+            <h2>Categorías</h2>
+            <p>Explora por tipo de colección</p>
           </div>
-          <div class="news-grid">
-            <div class="news-cards liquid-glass-style-secundary">
-              <img src="assets/bmw-e30.jpg" alt="" />
-              <ul>
-                <li>BMW E30</li>
-                <li>Coches</li>
-                <li>20.000€</li>
-              </ul>
+          <div class="categories-grid">
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">🚗</span>
+              <h3>Coches</h3>
+              <p>1.200 artículos</p>
             </div>
-            <div class="news-cards liquid-glass-style-secundary">
-              <img src="assets/kwas-figure.jpg" alt="" />
-              <ul>
-                <li>Kwas</li>
-                <li>Figuras</li>
-                <li>200€</li>
-              </ul>
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">🤖</span>
+              <h3>Figuras</h3>
+              <p>3.400 artículos</p>
             </div>
-            <div class="news-cards liquid-glass-style-secundary">
-              <img src="assets/chapas.jpg" alt="" />
-              <ul>
-                <li>Chapas</li>
-                <li>Antiguo</li>
-                <li>50€</li>
-              </ul>
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">🏺</span>
+              <h3>Antigüedades</h3>
+              <p>870 artículos</p>
             </div>
-            <div class="news-cards liquid-glass-style-secundary">
-              <img src="assets/basija-antigua.jpg" alt="" />
-              <ul>
-                <li>Basija Japonesa</li>
-                <li>Antiguo</li>
-                <li>3.000€</li>
-              </ul>
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">🧸</span>
+              <h3>Juguetes</h3>
+              <p>2.100 artículos</p>
             </div>
-            <div class="news-cards liquid-glass-style-secundary">
-              <img src="assets/juegue-la-robusteza-22558.webp" alt="" />
-              <ul>
-                <li>Robot de Juguete</li>
-                <li>Juguetes</li>
-                <li>75€</li>
-              </ul>
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">📀</span>
+              <h3>Música</h3>
+              <p>560 artículos</p>
+            </div>
+            <div class="category-card liquid-glass-style-secundary">
+              <span class="category-icon">🃏</span>
+              <h3>Cartas</h3>
+              <p>4.800 artículos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= NEW ARRIVALS ================= -->
+        <div class="new-arrivals">
+          <div class="container">
+            <div class="news-header">
+              <div>
+                <h2>Nuevos artículos</h2>
+                <p>Descubre las últimas adiciones a nuestra colección</p>
+              </div>
+              <button class="btn btn-primary">Ver todos</button>
+            </div>
+            <div class="news-grid">
+              <div class="news-cards liquid-glass-style-secundary">
+                <img src="assets/products/bmw-e30.jpg" alt="" />
+                <ul>
+                  <li>BMW E30</li>
+                  <li>Coches</li>
+                  <li>20.000€</li>
+                </ul>
+              </div>
+              <div class="news-cards liquid-glass-style-secundary">
+                <img src="assets/products/kwas-figure.jpg" alt="" />
+                <ul>
+                  <li>Kwas</li>
+                  <li>Figuras</li>
+                  <li>200€</li>
+                </ul>
+              </div>
+              <div class="news-cards liquid-glass-style-secundary">
+                <img src="assets/products/chapas.jpg" alt="" />
+                <ul>
+                  <li>Chapas</li>
+                  <li>Antiguo</li>
+                  <li>50€</li>
+                </ul>
+              </div>
+              <div class="news-cards liquid-glass-style-secundary">
+                <img src="assets/products/basija-antigua.jpg" alt="" />
+                <ul>
+                  <li>Basija Japonesa</li>
+                  <li>Antiguo</li>
+                  <li>3.000€</li>
+                </ul>
+              </div>
+              <div class="news-cards liquid-glass-style-secundary">
+                <img src="assets/products/juegue-la-robusteza-22558.webp" alt="" />
+                <ul>
+                  <li>Robot de Juguete</li>
+                  <li>Juguetes</li>
+                  <li>75€</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- ================= ABOUT US ================= -->
-       <section class="about-us">
-        <!-- ================= INFORMATION ================= -->
-        <div class="information-about">
-
-        </div>
-
-        <!-- ================= EVENTS ================= -->
-        <div class="events-about">
-
-        </div>
-       </section>
-
       <!-- ================= USER QUESTION ================= -->
       <section class="user-question">
         <div class="info-question">
@@ -186,9 +232,9 @@ SIGUEME y aprenderás más como esto.
           <div class="question-container">
             <div class="question-content">
               <div class="user-profile">
-                <img src="assets/felipe.jpg" alt="foto de perfil" />
+                <img src="assets/users/felipe.jpg" alt="foto de perfil" />
               </div>
-              <div class="question-text">
+              <div class="question-text liquid-glass-style">
                 <h3>Felipe45</h3>
                 <blockquote>
                   ¿Alguien sabe dónde puedo encontrar una figura de Kwas? Lorem
@@ -208,20 +254,20 @@ SIGUEME y aprenderás más como esto.
             </div>
             <div class="question-content">
               <div class="user-profile">
-                <img src="assets/felipe.jpg" alt="foto de perfil" />
+                <img src="assets/users/mariano.jpeg" alt="foto de perfil" />
               </div>
-              <div class="question-text">
-                <h3>Felipe45</h3>
+              <div class="question-text liquid-glass-style">
+                <h3>Mariano67</h3>
                 <blockquote>
-                  ¿Alguien sabe dónde puedo encontrar una figura de Kwas? Lorem
-                  ipsum dolor sit amet consectetur, adipisicing elit. Id, est
-                  magnam itaque sequi aut eius impedit officia accusantium
-                  reprehenderit sit libero similique eum molestias maxime odio
-                  dolorem voluptatum commodi accusamus?
+                  ¿Se sabe como va a desarrollar la próxima feria del
+                  coleccionismo? Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Id, est magnam itaque sequi aut eius impedit
+                  officia accusantium reprehenderit sit libero similique eum
+                  molestias maxime odio dolorem voluptatum commodi accusamus?
                 </blockquote>
                 <div class="question-stars">
                   <div>
-                    <p>350 respuestas</p>
+                    <p>322 respuestas</p>
                     <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
                   </div>
                   <button class="btn btn-outline">Ver respuestas</button>
@@ -230,10 +276,10 @@ SIGUEME y aprenderás más como esto.
             </div>
             <div class="question-content">
               <div class="user-profile">
-                <img src="assets/felipe.jpg" alt="foto de perfil" />
+                <img src="assets/users/laura.jpeg" alt="foto de perfil" />
               </div>
-              <div class="question-text">
-                <h3>Felipe45</h3>
+              <div class="question-text liquid-glass-style">
+                <h3>Laura45</h3>
                 <blockquote>
                   ¿Alguien sabe dónde puedo encontrar una figura de Kwas? Lorem
                   ipsum dolor sit amet consectetur, adipisicing elit. Id, est
@@ -243,7 +289,7 @@ SIGUEME y aprenderás más como esto.
                 </blockquote>
                 <div class="question-stars">
                   <div>
-                    <p>350 respuestas</p>
+                    <p>567 respuestas</p>
                     <img src="assets/5-star-rating.svg" alt="cinco-estrellas" />
                   </div>
                   <button class="btn btn-outline">Ver respuestas</button>
@@ -251,6 +297,106 @@ SIGUEME y aprenderás más como esto.
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT US ================= -->
+      <section class="about-us">
+        <div class="container">
+          <!-- INFORMACIÓN -->
+          <div class="information-about liquid-glass-style-secundary">
+            <div class="about-text">
+              <h2>Sobre nosotros</h2>
+              <p>
+                App Collector nació en 2022 de la pasión de un grupo de
+                coleccionistas que querían un lugar donde reunir, mostrar y
+                compartir sus tesoros con el mundo. Hoy somos una comunidad de
+                más de 10.000 apasionados.
+              </p>
+              <p>
+                Nuestra misión es simple: conectar a personas que aman los
+                objetos con historia, y darle a cada pieza el escaparate que
+                merece.
+              </p>
+              <button class="btn btn-primary">Conoce el equipo</button>
+            </div>
+            <div class="about-stats">
+              <div class="about-stat">
+                <h3>2022</h3>
+                <p>Año de fundación</p>
+              </div>
+              <div class="about-stat">
+                <h3>12</h3>
+                <p>Países activos</p>
+              </div>
+              <div class="about-stat">
+                <h3>4.9 ⭐</h3>
+                <p>Valoración media</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVENTOS -->
+          <div class="events-about">
+            <h2>Próximos eventos</h2>
+            <div class="events-list">
+              <div class="event-item liquid-glass-style-secundary">
+                <div class="event-date">
+                  <span class="event-day">15</span>
+                  <span class="event-month">MAR</span>
+                </div>
+                <div class="event-info">
+                  <h3>Feria del Coleccionismo Madrid</h3>
+                  <p>Madrid · Presencial</p>
+                </div>
+                <button class="btn btn-outline">Ver más</button>
+              </div>
+              <div class="event-item liquid-glass-style-secundary">
+                <div class="event-date">
+                  <span class="event-day">02</span>
+                  <span class="event-month">ABR</span>
+                </div>
+                <div class="event-info">
+                  <h3>Subasta Online de Figuras Raras</h3>
+                  <p>Online · En directo</p>
+                </div>
+                <button class="btn btn-outline">Ver más</button>
+              </div>
+              <div class="event-item liquid-glass-style-secundary">
+                <div class="event-date">
+                  <span class="event-day">20</span>
+                  <span class="event-month">ABR</span>
+                </div>
+                <div class="event-info">
+                  <h3>Encuentro de Coleccionistas Barcelona</h3>
+                  <p>Barcelona · Presencial</p>
+                </div>
+                <button class="btn btn-outline">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= NEWSLETTER ================= -->
+      <section class="newsletter liquid-glass-style">
+        <div class="newsletter-content">
+          <h2>¿No quieres perderte nada?</h2>
+          <p>
+            Suscríbete y recibe las últimas novedades, subastas exclusivas y
+            artículos raros directamente en tu correo.
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Tu correo electrónico"
+              class="newsletter-input"
+            />
+            <button class="btn btn-primary">Suscribirme</button>
+          </div>
+          <p class="newsletter-disclaimer">
+            Sin spam. Puedes darte de baja cuando quieras.
+          </p>
         </div>
       </section>
     </main>
