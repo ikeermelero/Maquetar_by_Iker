@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>App Collector</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
   </head>
@@ -17,53 +17,86 @@
         </div>
       </nav>
     </header>
-    <section transition-style="in:circle:hesitate" class="hero liquid-glass-style">
+    <section>
       <div class="login-container">
-        <div class="auth-card">
-        <div class="auth-tabs">
-            <button class="tab active">Iniciar sesión</button>
-            <button class="tab">Registrarse</button>
-        </div>
+        <div class="auth-card">      
+            <div class="auth-content">
+                <div class="login-card">
+                    <div class="auth-tabs">
+                        <button class="tab active">Iniciar sesión</button>
+                    </div>
+                <form class="auth-form">
+                    <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="iker@email.com" required />
+                    </div>
 
-        <form class="auth-form">
-            <div class="input-group">
-            <label>Email</label>
-            <input type="email" placeholder="iker@email.com" required />
+                    <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="••••••••" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full">
+                    Iniciar sesión
+                    </button>
+                </form>
+
+                <div class="divider">
+                    <span>o continúa con</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn google">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/>
+                    Google
+                    </button>
+
+                    <button class="social-btn github">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+                    GitHub
+                    </button>
+
+                    <button class="social-btn discord">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"/>
+                    Discord
+                    </button>
+                </div>
+                </div>
+                <div class="register-card">
+                    <div class="auth-tabs">
+                        <button class="tab active">Crear cuenta</button>
+                    </div>
+                    <form class="auth-form">
+                    <div class="input-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Iker Melero" required />
+                    </div>
+
+                    <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="iker@email.com" required />
+                    </div>
+
+                    <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="••••••••" required />
+                    </div>
+
+                    <div class="input-group">
+                    <label>Confirmar contraseña</label>
+                    <input type="password" placeholder="••••••••" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full">
+                    Crear cuenta
+                    </button>
+                </form>
+                </div>
             </div>
-
-            <div class="input-group">
-            <label>Contraseña</label>
-            <input type="password" placeholder="••••••••" required />
-            </div>
-
-            <button type="submit" class="btn btn-primary full">
-            Iniciar sesión
-            </button>
-        </form>
-
-        <div class="divider">
-            <span>o continúa con</span>
         </div>
-
-        <div class="social-login">
-            <button class="social-btn google">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"/>
-            Google
-            </button>
-
-            <button class="social-btn github">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-            GitHub
-            </button>
-
-            <button class="social-btn discord">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg"/>
-            Discord
-            </button>
-        </div>
-        </div>
-                
-            </div>
     </section>
+    <footer class="footer">
+      <p>© 2026 App Collector - Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
